@@ -1,7 +1,7 @@
 module PowerBiEmbedded
   class Authenticate
 
-    BASE_URL   = "https://login.windows.net/common/oauth2/token"
+    BASE_URL   = "https://login.microsoftonline.com/common/oauth2/authorize"
     RESOURCE   = "https://analysis.windows.net/powerbi/api"
 
     def initialize(username: nil, password: nil, refresh_token: nil, client_id: nil, grant_type: nil)
